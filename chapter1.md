@@ -5,7 +5,7 @@ attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 ---
-## Plot the movies yourself
+## CHAPTER 1: Plot the movies yourself
 
 ```yaml
 type: NormalExercise
@@ -54,37 +54,50 @@ stats.ttest_1samp(ua_delays, popmean)
 
 `@solution`
 ```{python}
-# Get integer values for genres
-_, ints = np.unique(movies.genre, return_inverse = True)
-
-# Import matplotlib.pyplot
-import matplotlib.pyplot as plt
-
-# Make a scatter plot: runtime on  x-axis, rating on y-axis and set c to ints
-plt.scatter(movies.runtime, movies.rating, c=ints)
-
-# Show the plot
-plt.show()
+# leave blanc for now
 ```
 
 `@sct`
 ```{python}
 # SCT written with pythonwhat: https://github.com/datacamp/pythonwhat/wiki
-
-test_function("numpy.unique",
-              not_called_msg = "Don't remove the call of `np.unique` to define `ints`.",
-              incorrect_msg = "Don't change the call of `np.unique` to define `ints`.")
-
-test_object("ints",
-            undefined_msg = "Don't remove the definition of the predefined `ints` object.",
-            incorrect_msg = "Don't change the definition of the predefined `ints` object.")
-
-test_import("matplotlib.pyplot", same_as = True)
-
-test_function("matplotlib.pyplot.scatter",
-              incorrect_msg = "You didn't use `plt.scatter()` correctly, have another look at the instructions.")
-
-test_function("matplotlib.pyplot.show")
+#  don't worry about it now
 
 success_msg("Great work!")
+```
+
+
+---
+## exercise 2
+
+```yaml
+type: NormalExercise
+key: 1b8445f214
+lang: python
+xp: 100
+skills: 2
+```
+
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
 ```
