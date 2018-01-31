@@ -15,18 +15,13 @@ skills: 1
 key: 7942f6cb9a
 ```
 
-background context on exercise
+`@hint`
 
 `@instructions`
-- instruction 1
-- instruction 2
-- instruction 3
-
-`@hint`
 
 
 `@pre_exercise_code`
-```{python}
+```
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
@@ -38,8 +33,6 @@ all_delays = df['DEPARTURE_DELAY'].dropna()
 df_ua = df.loc[df['AIRLINE'] == 'UA']
 ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
 
-
-```
 
 `@sample_code`
 ```{python}
