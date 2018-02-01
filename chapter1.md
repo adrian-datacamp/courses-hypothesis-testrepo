@@ -5,7 +5,9 @@ attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 ---
-## CHAPTER 1: Plot the movies yourself
+## CHAPTER 1: 
+
+## Exercise 1: The `flight_delays.csv` dataset contains US flight information, such as departure location, arrival location, cancellations, and delays for US airline companies. Select one of the airline companies (eg. United Airlines), and using a significance level of 0.01, determine whether this airline company experiences significantly different delays compared to overall average delays. 
 
 ```yaml
 type: NormalExercise
@@ -25,14 +27,14 @@ key: 7942f6cb9a
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
-df = pd.read_csv('https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/Chicago_violent_crimes.csv.gz.csv')
+df = pd.read_csv('https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/Chicago_violent_crimes.csv.gz')
 # rename it back to .csv.gz
 # unpack it using pandas
 all_delays = df['DEPARTURE_DELAY'].dropna()
 
 df_ua = df.loc[df['AIRLINE'] == 'UA']
 ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
-
+```
 
 `@sample_code`
 ```{python}
@@ -60,7 +62,7 @@ success_msg("Great work!")
 
 
 ---
-## exercise 2
+## Exercise 2:
 
 ```yaml
 type: NormalExercise
