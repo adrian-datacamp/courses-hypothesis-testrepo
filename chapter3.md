@@ -93,6 +93,7 @@ all_delays = df['DEPARTURE_DELAY'].dropna()
 df_ua = df.loc[df['AIRLINE'] == 'UA']
 ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
     
+print('Works!')    
 ```
 
 *** =sample_code
