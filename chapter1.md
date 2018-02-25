@@ -27,13 +27,17 @@ key: 7942f6cb9a
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
-df = pd.read_csv('https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/Chicago_violent_crimes.csv.gz')
-# rename it back to .csv.gz
-# unpack it using pandas
-all_delays = df['DEPARTURE_DELAY'].dropna()
+import gzip
+import urllib.request
 
-df_ua = df.loc[df['AIRLINE'] == 'UA']
-ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
+filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/Chicago_violent_crimes.csv.gz.csv'
+urllib.request.urlretrieve(filename, "Chicago_violent_crimes.csv.gz")
+
+df = pd.read_csv('Chicago_violent_crimes.csv.gz')
+#all_delays = df['DEPARTURE_DELAY'].dropna()
+
+#df_ua = df.loc[df['AIRLINE'] == 'UA']
+#ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
 ```
 
 `@sample_code`
