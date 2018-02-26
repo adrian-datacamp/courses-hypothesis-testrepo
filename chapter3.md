@@ -1,5 +1,5 @@
 ---
-title       : Chapter 3
+title       : Two sample hypothesis testing
 description : Insert the chapter description here
 
 

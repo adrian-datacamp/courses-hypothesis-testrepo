@@ -1,6 +1,6 @@
 ---
-title       : Chapter 2
-description : Insert the chapter description here
+title       : One sample hypothesis testing
+description : 
 
 
 

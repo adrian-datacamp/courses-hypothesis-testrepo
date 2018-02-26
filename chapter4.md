@@ -1,5 +1,5 @@
 ---
-title       : Chapter 4
+title       : Multiple sample hypothesis testing
 description : Insert the chapter description here
 
 
