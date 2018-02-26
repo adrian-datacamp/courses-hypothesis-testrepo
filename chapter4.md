@@ -15,12 +15,12 @@ xp: 100
 skills: 1
 key: 7942f6cb9a
 ```
+`@hint`
 
-*** =instructions
+`@instructions`
 
-*** =hint
 
-*** =pre_exercise_code
+`@pre_exercise_code`
 ```{python}
 
 import numpy as np
@@ -33,14 +33,16 @@ notreatment = np.array([32, 33, 21, 12, 15, 14, 55, 67, 72, 1, 44, 60, 36, 38, 4
 
 ```
 
-*** =sample_code
+`@sample_code`
 ```{python}
+n = notreatment.mean()
+print(n)
 
 ```
 
-*** =solution
+`@solution`
 ```{python}
-
+# leave blank for now
 ```
 
 *** =sct
