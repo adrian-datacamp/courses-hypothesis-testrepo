@@ -19,7 +19,7 @@ key: 7942f6cb9a
 `@hint`
 
 `@instructions`
-## Exercise 1: 
+# Exercise 1: 
 
 A survey of National Federation of Independence Business (NFIB) indicates that small businesses intended to increase their hiring as well as their capital expenditures during 2017 as compared with 2016. Suppose that, as part of a follow-up survey by NFIB, 20 small businesses, randomly chosen from the NFIB's list of 2,100 companies, show an average hiring from 2016 equal to 3.2 new employees per firm and a standard deviation of 1.5 hires. A random sample of 30 small businesses taken at the end of 2017 shows an average of 5.1 new hires and a standard deviation of 2.3 hires. At the alpha=0.01 level of significance, can you conclude that average hiring by all small businesses in 2017 increased as compared with 2016?
 
@@ -85,7 +85,7 @@ key: 7942f6cb9a
 
 *** =instructions
 
-## Exercise 2: 
+# Exercise 2: 
 
 Recall the US flights dataset from Chapter 1. The conclusion was that the p-value is small enough to reject the null hypothesis that stated that there is no statistically significant difference between the mean of United Airlines delays and mean delays experienced overall. Using again the same data, evaluate whether there are less or more UA delays compared to overall US airline delays.
 
