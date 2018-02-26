@@ -36,7 +36,6 @@ def pdf_plotter(mean,std):
 
 `@sample_code`
 ```{python}
-
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
@@ -57,7 +56,6 @@ pdf_plotter(5.1, 2.3)
 stats.ttest_ind(pop_2016, pop_2017)
 
 # test if there is an increase in 2017 (directional)
-
 ```
 
 `@solution`
@@ -76,7 +74,6 @@ stats.ttest_ind(pop_2016, pop_2017)
 
 ```
 
-## Exercise 2: Recall the US flights dataset from Chapter 1. The conclusion was that the p-value is small enough to reject the null hypothesis that stated that there is no statistically significant difference between the mean of United Airlines delays and mean delays experienced overall. Using again the same data, evaluate whether there are less or more UA delays compared to overall US airline delays.
 
 ```yaml
 type: NormalExercise
@@ -88,36 +85,38 @@ key: 7942f6cb9a
 
 *** =instructions
 
+## Exercise 2: 
+
+Recall the US flights dataset from Chapter 1. The conclusion was that the p-value is small enough to reject the null hypothesis that stated that there is no statistically significant difference between the mean of United Airlines delays and mean delays experienced overall. Using again the same data, evaluate whether there are less or more UA delays compared to overall US airline delays.
+
+
 *** =hint
 
 *** =pre_exercise_code
 ```{python}
-
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
 import urllib.request
 
-filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/flight_delays.csv.gz'
-urllib.request.urlretrieve(filename, "flight_delays.csv.gz")
+#filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/flight_delays.csv.gz'
+#urllib.request.urlretrieve(filename, "flight_delays.csv.gz")
 
-df = pd.read_csv('~/DataCamp/datasets/flight_delays.csv.gz')
-all_delays = df['DEPARTURE_DELAY'].dropna()
+#df = pd.read_csv('~/DataCamp/datasets/flight_delays.csv.gz')
+#all_delays = df['DEPARTURE_DELAY'].dropna()
 
-df_ua = df.loc[df['AIRLINE'] == 'UA']
-ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
-    
-print('Works!')    
+#df_ua = df.loc[df['AIRLINE'] == 'UA']
+#ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
+
 ```
 
 *** =sample_code
 ```{python}
-
+print('Test print!')   
 ```
 
 *** =solution
 ```{python}
-
 print(all_delays.mean())
 print(ua_delays.mean())
 
