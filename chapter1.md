@@ -23,7 +23,7 @@ key: 7942f6cb9a
 
 
 `@pre_exercise_code`
-```
+```{python}
 import numpy as np
 import pandas as pd
 import scipy.stats as stats

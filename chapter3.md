@@ -86,6 +86,10 @@ key: 7942f6cb9a
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
+import urllib.request
+
+filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/flight_delays.csv.gz'
+urllib.request.urlretrieve(filename, "flight_delays.csv.gz")
 
 df = pd.read_csv('~/DataCamp/datasets/flight_delays.csv.gz')
 all_delays = df['DEPARTURE_DELAY'].dropna()

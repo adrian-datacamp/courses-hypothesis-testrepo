@@ -67,8 +67,12 @@ key: 7942f6cb9a
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
+import urllib.request
 
-df = pd.read_csv('~/DataCamp/datasets/Chicago_violent_crimes.csv.gz')
+filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/Chicago_violent_crimes.csv.gz.csv'
+urllib.request.urlretrieve(filename, "Chicago_violent_crimes.csv.gz")
+
+df = pd.read_csv('Chicago_violent_crimes.csv.gz')
 
 theft = df[df['Primary Category']=='THEFT']
 assault = df[df['Primary Category']=='ASSAULT']
