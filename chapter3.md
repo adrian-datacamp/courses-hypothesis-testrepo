@@ -5,8 +5,7 @@ description : Insert the chapter description here
 
 
 --- 
-## CHAPTER 3:
-
+## CHAPTER 3: exercise 1
 
 ```yaml
 type: NormalExercise
@@ -73,14 +72,15 @@ stats.ttest_ind(pop_2016, pop_2017)
 ```{python}
 
 ```
-
+---
+## Exercise 2
 
 ```yaml
 type: NormalExercise
 lang: python
 xp: 100
 skills: 1
-key: 7942f6cb9a
+key: e94f3cb870
 ```
 
 *** =instructions

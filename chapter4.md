@@ -54,6 +54,8 @@ print(n)
 ```{python}
 
 ```
+---
+
 ## Exercise 2:
 
 ```yaml
@@ -61,7 +63,7 @@ type: NormalExercise
 lang: python
 xp: 100
 skills: 1
-key: 7942f6cb9a
+key: 08a7ea7589
 ```
 
 *** =instructions
