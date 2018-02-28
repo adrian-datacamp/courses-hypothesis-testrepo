@@ -17,11 +17,22 @@ key: 7942f6cb9a
 
 *** =instructions
 
+Dataframe has been preloaded in `df_complaints`.
+
 *** =hint
 
 *** =pre_exercise_code
 ```{python}
 
+import numpy as np
+import pandas as pd
+import scipy.stats as stats
+import urllib.request
+
+filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/Chicago_violent_crimes.csv.gz.csv'
+urllib.request.urlretrieve(filename, "nyc_complaints_311.csv.gz")
+
+df_complaints = pd.read_csv('nyc_complaints_311.csv.gz')
 ```
 
 *** =sample_code
@@ -39,7 +50,7 @@ key: 7942f6cb9a
 
 ```
 
---- type:NormalExercise lang:python xp:100 skills:2 key:025dad7de4
+--- type:NormalExercise lang:python xp:100 skills:2 key:845cb770d9
 ## <<<New Exercise>>>
 
 ```yaml
@@ -47,7 +58,7 @@ type: NormalExercise
 lang: python
 xp: 100
 skills: 1
-key: 8a4eea4d5f
+key: 7942f6cb9a
 ```
 
 *** =instructions
