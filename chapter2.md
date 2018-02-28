@@ -39,7 +39,7 @@ key: 7942f6cb9a
 
 ```
 
---- type:NormalExercise lang:python xp:100 skills:2 key:771312d31d
+--- type:NormalExercise lang:python xp:100 skills:2 key:025dad7de4
 ## <<<New Exercise>>>
 
 ```yaml
@@ -47,7 +47,7 @@ type: NormalExercise
 lang: python
 xp: 100
 skills: 1
-key: b4132f0965
+key: 7942f6cb9a
 ```
 
 *** =instructions
