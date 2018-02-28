@@ -59,6 +59,7 @@ pdf_plotter(mean_1,std_1,'drug')
 pdf_plotter(mean_2,std_2, 'placebo')
 pdf_plotter(mean_3,std_3, 'no treatment')
 
+plt.legend()
 plt.show()
 
 ```
