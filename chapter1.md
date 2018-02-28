@@ -53,13 +53,12 @@ stats.ttest_1samp(ua_delays, popmean)
 
 `@solution`
 ```{python}
-# leave blanc for now
+# leave blank for now
 ```
 
 `@sct`
 ```{python}
 # SCT written with pythonwhat: https://github.com/datacamp/pythonwhat/wiki
-#  don't worry about it now
 
 success_msg("Great work!")
 ```
