@@ -98,4 +98,5 @@ skills: 2
 `@sct`
 ```{python}
 
+success_msg("Great work!")
 ```
