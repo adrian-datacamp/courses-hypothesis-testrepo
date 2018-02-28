@@ -34,7 +34,7 @@ import matplotlib.pyplot as plt
 def pdf_plotter(mean,std):
     # plots the probability density function 
     range = np.arange(mean-4*std, mean+4*std, 0.001)
-    plt.plot(range, norm.pdf(range, mean, std))
+    plt.plot(range, stats.norm.pdf(range, mean, std))
     plt.xlim(mean-4*std, mean+4*std)
 
 drug = np.array([12, 17, 34, 11, 5, 42, 18, 27, 2, 37, 50, 32, 12, 27, 21, 10, 4, 33, 63, 22, 41, 19, 28, 29, 8])
