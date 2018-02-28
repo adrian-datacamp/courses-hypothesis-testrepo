@@ -20,7 +20,7 @@ key: 7942f6cb9a
 
 `@instructions`
 
-The `flight_delays.csv` dataset contains US flight information, such as departure location, arrival location, cancellations, and delays for US airline companies. Select one of the airline companies (eg. United Airlines), and using a significance level of $\alpha$ = 0.01, determine whether this airline company experiences significantly different delays compared to overall average delays. 
+The `us_flight_delays.csv` dataset contains US flight information, such as departure location, arrival location, cancellations, and delays for US airline companies. Select one of the airline companies (eg. United Airlines), and using a significance level of $\alpha$ = 0.01, determine whether this airline company experiences significantly different delays compared to overall average delays. 
 
 
 `@pre_exercise_code`
@@ -30,16 +30,14 @@ import pandas as pd
 import scipy.stats as stats
 import urllib.request
 
-filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/Chicago_violent_crimes.csv.gz.csv'
-urllib.request.urlretrieve(filename, "Chicago_violent_crimes.csv.gz")
+filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/us_flight_delays.csv.gz.csv'
+urllib.request.urlretrieve(filename, "us_flight_delays.csv.gz")
 
-df = pd.read_csv('Chicago_violent_crimes.csv.gz')
-#all_delays = df['DEPARTURE_DELAY'].dropna()
+df_flights = pd.read_csv('us_flight_delays.csv.gz')
+all_delays = df_flights['DEPARTURE_DELAY'].dropna()
 
-#print(df.head())
-
-#df_ua = df.loc[df['AIRLINE'] == 'UA']
-#ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
+df_ua = df_flights.loc[df_flights['AIRLINE'] == 'UA']
+ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
 ```
 
 `@sample_code`
