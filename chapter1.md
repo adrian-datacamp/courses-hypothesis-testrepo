@@ -38,6 +38,9 @@ all_delays = df_flights['DEPARTURE_DELAY'].dropna()
 
 df_ua = df_flights.loc[df_flights['AIRLINE'] == 'UA']
 ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
+
+# preloaded \alpha value
+alpha = 0.01
 ```
 
 `@sample_code`
@@ -47,8 +50,13 @@ print(ua_delays.mean())
 
 # one sample t-test; compare population mean to one sample mean
 popmean = all_delays.mean()
-stats.ttest_1samp(ua_delays, popmean) 
+st, p = stats.ttest_1samp(ua_delays, popmean)
 
+# use the obtained p-value and given significance level to assess whether you should reject or fail to reject the hypothesis
+if (p > alpha):
+    print('p-value > alpha, thus we fail to reject the NULL hypothesis.')
+else: 
+    print('p-value <= alpha, thus we reject the NULL hypothesis.')
 ```
 
 `@solution`
