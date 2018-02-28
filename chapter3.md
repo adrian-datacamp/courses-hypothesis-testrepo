@@ -51,7 +51,7 @@ pdf_plotter(3.2, 1.5)
 pdf_plotter(5.1, 2.3)
 
 # test whether there is a difference between 2016 and 2017
-stats.ttest_ind(pop_2016, pop_2017)
+st, p = stats.ttest_ind(pop_2016, pop_2017)
 
 # test if there is an increase in 2017 (directional)
 ```
