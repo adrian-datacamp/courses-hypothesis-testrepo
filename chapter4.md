@@ -30,10 +30,10 @@ import pandas as pd
 import scipy.stats as stats
 import matplotlib.pyplot as plt
 
-def pdf_plotter(mean,std):
+def pdf_plotter(mean,std,label):
     # plots the probability density function 
     range = np.arange(mean-4*std, mean+4*std, 0.001)
-    plt.plot(range, stats.norm.pdf(range, mean, std))
+    plt.plot(range, stats.norm.pdf(range, mean, std), label=label)
     plt.xlim(mean-4*std, mean+4*std)
 
 drug = np.array([12, 17, 34, 11, 5, 42, 18, 27, 2, 37, 50, 32, 12, 27, 21, 10, 4, 33, 63, 22, 41, 19, 28, 29, 8])
@@ -55,11 +55,10 @@ std_2 = np.std(placebo)
 mean_3 = np.mean(notreatment)
 std_3 = np.std(notreatment)
 
-pdf_plotter(mean_1,std_1)
-pdf_plotter(mean_2,std_2)
-pdf_plotter(mean_3,std_3)
+pdf_plotter(mean_1,std_1,'drug')
+pdf_plotter(mean_2,std_2, 'placebo')
+pdf_plotter(mean_3,std_3, 'no treatment')
 
-plt.legend()
 plt.show()
 
 ```
