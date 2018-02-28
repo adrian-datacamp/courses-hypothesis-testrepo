@@ -84,8 +84,6 @@ key: e94f3cb870
 
 *** =instructions
 
-# Exercise 2: 
-
 Recall the US flights dataset from Chapter 1. The conclusion was that the p-value is small enough to reject the null hypothesis stating that there is no statistically significant difference between the mean of United Airlines delays and mean delays experienced overall. Using again the same data, evaluate whether there are less or more UA delays compared to overall US airline delays.
 
 
