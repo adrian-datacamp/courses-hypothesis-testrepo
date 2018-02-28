@@ -5,7 +5,7 @@ description : Insert the chapter description here
 
 --- type:NormalExercise lang:python xp:100 skills:2 key:13e65f0ce8
 
-## CHAPTER 4: 
+## CHAPTER 4: Exercise 1
 
 ```yaml
 type: NormalExercise
@@ -56,7 +56,7 @@ print(n)
 ```
 ---
 
-## Exercise 2:
+## CHAPTER 4: Exercise 2
 
 ```yaml
 type: NormalExercise

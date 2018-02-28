@@ -5,7 +5,7 @@ attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 ---
-## CHAPTER 1: 
+## CHAPTER 1: Exercise 1 
 
 
 ```yaml
@@ -19,7 +19,6 @@ key: 7942f6cb9a
 `@hint`
 
 `@instructions`
-## Exercise 1:
 
 The `flight_delays.csv` dataset contains US flight information, such as departure location, arrival location, cancellations, and delays for US airline companies. Select one of the airline companies (eg. United Airlines), and using a significance level of $\alpha$ = 0.01, determine whether this airline company experiences significantly different delays compared to overall average delays. 
 
@@ -69,7 +68,7 @@ success_msg("Great work!")
 
 
 ---
-## Exercise 2:
+## CHAPTER 3: Exercise 2
 
 ```yaml
 type: NormalExercise

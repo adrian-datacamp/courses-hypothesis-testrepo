@@ -5,7 +5,7 @@ description :
 
 
 --- type:NormalExercise lang:python xp:100 skills:2 key:13e65f0ce8
-## <<<New Exercise>>>
+## CHAPTER 2: Exercise 1
 
 ```yaml
 type: NormalExercise
@@ -50,15 +50,15 @@ df_complaints = pd.read_csv('nyc_complaints_311.csv.gz')
 
 ```
 
---- type:NormalExercise lang:python xp:100 skills:2 key:a466f0e630
-## <<<New Exercise>>>
+--- type:NormalExercise lang:python xp:100 skills:2 key:1044538a07
+## CHAPTER 2: Exercise 2
 
 ```yaml
 type: NormalExercise
 lang: python
 xp: 100
 skills: 1
-key: 2b7a345c07
+key: 7942f6cb9a
 ```
 
 *** =instructions
