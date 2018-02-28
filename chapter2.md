@@ -17,7 +17,7 @@ key: 7942f6cb9a
 
 *** =instructions
 
-Dataframe has been preloaded in `complaints`.
+New York City has an open access dataset containing all 311 service calls requesting service or registering a complaint. The data has been preloaded in `complaints` dataframe. 
 
 *** =hint
 
@@ -50,7 +50,7 @@ complaints = pd.read_csv('nyc_complaints_311.csv.gz')
 
 ```
 
---- type:NormalExercise lang:python xp:100 skills:2 key:9aace246e0
+--- type:NormalExercise lang:python xp:100 skills:2 key:abb0044cf9
 ## CHAPTER 2: Exercise 2
 
 ```yaml
@@ -58,7 +58,7 @@ type: NormalExercise
 lang: python
 xp: 100
 skills: 1
-key: 6075e6b969
+key: 7942f6cb9a
 ```
 
 *** =instructions
