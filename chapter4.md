@@ -87,6 +87,8 @@ key: 08a7ea7589
 
 *** =instructions
 
+The City of Chicago has made publicly available their crime records preloaded in `crime` dataframe. There are several violent crimes happening in the city, extracted from `crime` and stored in separate dataframes: `theft`, `assault`, `homicide`, `burglary`, `arson`. 
+
 *** =hint
 
 *** =pre_exercise_code
@@ -100,7 +102,7 @@ import urllib.request
 filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/Chicago_violent_crimes.csv.gz.csv'
 urllib.request.urlretrieve(filename, "Chicago_violent_crimes.csv.gz")
 
-df = pd.read_csv('Chicago_violent_crimes.csv.gz')
+crimes = pd.read_csv('Chicago_violent_crimes.csv.gz')
 
 theft = df[df['Primary Category']=='THEFT']
 assault = df[df['Primary Category']=='ASSAULT']
