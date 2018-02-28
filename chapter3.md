@@ -50,6 +50,9 @@ pop_2017 = np.random.normal(5.1, 2.3, 2100)
 pdf_plotter(3.2, 1.5, 'sample')
 pdf_plotter(5.1, 2.3, 'population')
 
+plt.legend()
+plt.show()
+
 # test whether there is a difference between 2016 and 2017
 st, p = stats.ttest_ind(pop_2016, pop_2017)
 
