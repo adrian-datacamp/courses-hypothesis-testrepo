@@ -31,15 +31,15 @@ def pdf_plotter(mean,std):
     plt.plot(range, stats.norm.pdf(range, mean, std))
     plt.xlim(mean-4*std, mean+4*std)
     
-```
-
-`@sample_code`
-```{python}
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
 import matplotlib.pyplot as plt
+    
+```
 
+`@sample_code`
+```{python}
 sb_2016 = np.random.normal(3.2, 1.5, 20)
 sb_2017 = np.random.normal(5.1, 2.3, 30)
 
