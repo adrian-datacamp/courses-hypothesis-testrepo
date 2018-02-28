@@ -22,6 +22,16 @@ key: 7942f6cb9a
 
 The `us_flight_delays.csv` dataset contains US flight information, such as departure location, arrival location, cancellations, and delays for US airline companies. Select one of the airline companies (e.g. United Airlines), and using a significance level of $\alpha$ = 0.01, determine whether this airline company experiences significantly different delays compared to overall average delays. 
 
+Based on your obtained p-value, the following can be inferred about United Airlines:
+
+a) UA experiences significantly different delays
+
+b) there is no statistically significant difference between UA delays and all airline company delays
+
+c) UA experiences on average more delays 
+
+d) UA experiences on average less delays
+
 
 `@pre_exercise_code`
 ```{python}
