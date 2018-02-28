@@ -50,7 +50,7 @@ df_complaints = pd.read_csv('nyc_complaints_311.csv.gz')
 
 ```
 
---- type:NormalExercise lang:python xp:100 skills:2 key:363926e4ad
+--- type:NormalExercise lang:python xp:100 skills:2 key:074205a366
 ## CHAPTER 2: Exercise 2
 
 ```yaml
@@ -58,7 +58,7 @@ type: NormalExercise
 lang: python
 xp: 100
 skills: 1
-key: 3725dcc2ac
+key: 7942f6cb9a
 ```
 
 *** =instructions

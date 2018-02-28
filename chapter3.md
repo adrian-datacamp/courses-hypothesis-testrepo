@@ -99,7 +99,7 @@ import pandas as pd
 import scipy.stats as stats
 import urllib.request
 
-filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/flight_delays.csv.gz'
+filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/us_flight_delays.csv.gz'
 urllib.request.urlretrieve(filename, "us_flight_delays.csv.gz")
 
 df_flights = pd.read_csv('~/DataCamp/datasets/us_flight_delays.csv.gz')
