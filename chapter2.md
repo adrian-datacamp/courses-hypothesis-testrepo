@@ -58,7 +58,7 @@ type: NormalExercise
 lang: python
 xp: 100
 skills: 1
-key: 7942f6cb9a
+key: 78513064a8
 ```
 
 *** =instructions
