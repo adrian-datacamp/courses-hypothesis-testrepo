@@ -87,7 +87,7 @@ key: 08a7ea7589
 
 *** =instructions
 
-The City of Chicago has made publicly available their crime records preloaded in `crime` dataframe. There are several violent crimes happening in the city, extracted from `crime` and stored in separate dataframes: `theft`, `assault`, `homicide`, `burglary`, `arson`. 
+The City of Chicago has made publicly available their crime records, and we have preloaded the data in `crime` dataframe. There are several violent crimes happening in the city, extracted from `crime` and stored in separate dataframes: `theft`, `assault`, `homicide`, `burglary`, `arson`. 
 
 *** =hint
 
