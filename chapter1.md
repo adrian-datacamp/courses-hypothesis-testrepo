@@ -68,7 +68,7 @@ success_msg("Great work!")
 
 
 ---
-## CHAPTER 3: Exercise 2
+## CHAPTER 1: Exercise 2
 
 ```yaml
 type: NormalExercise
