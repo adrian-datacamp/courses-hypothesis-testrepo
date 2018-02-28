@@ -102,7 +102,7 @@ import urllib.request
 filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/us_flight_delays.csv.gz.csv'
 urllib.request.urlretrieve(filename, "us_flight_delays.csv.gz")
 
-df_flights = pd.read_csv('~/DataCamp/datasets/us_flight_delays.csv.gz')
+df_flights = pd.read_csv('us_flight_delays.csv.gz')
 all_delays = df['DEPARTURE_DELAY'].dropna()
 
 df_ua = df.loc[df['AIRLINE'] == 'UA']
