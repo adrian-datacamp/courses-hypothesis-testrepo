@@ -99,14 +99,14 @@ import pandas as pd
 import scipy.stats as stats
 import urllib.request
 
-#filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/flight_delays.csv.gz'
-#urllib.request.urlretrieve(filename, "flight_delays.csv.gz")
+filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/flight_delays.csv.gz'
+urllib.request.urlretrieve(filename, "us_flight_delays.csv.gz")
 
-#df = pd.read_csv('~/DataCamp/datasets/flight_delays.csv.gz')
-#all_delays = df['DEPARTURE_DELAY'].dropna()
+df_flights = pd.read_csv('~/DataCamp/datasets/us_flight_delays.csv.gz')
+all_delays = df['DEPARTURE_DELAY'].dropna()
 
-#df_ua = df.loc[df['AIRLINE'] == 'UA']
-#ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
+df_ua = df.loc[df['AIRLINE'] == 'UA']
+ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
 
 ```
 
