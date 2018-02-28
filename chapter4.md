@@ -110,7 +110,7 @@ homicide = df[df['Primary Category']=='HOMICIDE']
 burglary = df[df['Primary Category']=='BURGLARY']
 arson = df[df['Primary Category']=='ARSON']
 
-crimes = df
+crime = df
 
 ```
 
