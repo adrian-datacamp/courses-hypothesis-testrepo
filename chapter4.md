@@ -104,11 +104,11 @@ urllib.request.urlretrieve(filename, "Chicago_violent_crimes.csv.gz")
 
 df = pd.read_csv('Chicago_violent_crimes.csv.gz')
 
-theft = df[df['Primary Category']=='THEFT']
-assault = df[df['Primary Category']=='ASSAULT']
-homicide = df[df['Primary Category']=='HOMICIDE']
-burglary = df[df['Primary Category']=='BURGLARY']
-arson = df[df['Primary Category']=='ARSON']
+#theft = df[df['Primary Category']=='THEFT']
+#assault = df[df['Primary Category']=='ASSAULT']
+#homicide = df[df['Primary Category']=='HOMICIDE']
+#burglary = df[df['Primary Category']=='BURGLARY']
+#arson = df[df['Primary Category']=='ARSON']
 
 crime = df
 
