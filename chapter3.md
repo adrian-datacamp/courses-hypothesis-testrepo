@@ -25,9 +25,9 @@ A survey of National Federation of Independence Business (NFIB) indicates that s
 `@pre_exercise_code`
 ```{python}
 
-def pdf_plotter(mean,std):
+def pdf_plotter(mean,std,label):
     range = np.arange(mean-4*std, mean+4*std, 0.001)
-    plt.plot(range, stats.norm.pdf(range, mean, std))
+    plt.plot(range, stats.norm.pdf(range, mean, std), label=label)
     plt.xlim(mean-4*std, mean+4*std)
     
 import numpy as np
@@ -47,8 +47,8 @@ pop_2017 = np.random.normal(5.1, 2.3, 2100)
 
 # plot the two distributions using the 'pdf_plotter' function
 
-pdf_plotter(3.2, 1.5)
-pdf_plotter(5.1, 2.3)
+pdf_plotter(3.2, 1.5, 'sample')
+pdf_plotter(5.1, 2.3, 'population')
 
 # test whether there is a difference between 2016 and 2017
 st, p = stats.ttest_ind(pop_2016, pop_2017)
