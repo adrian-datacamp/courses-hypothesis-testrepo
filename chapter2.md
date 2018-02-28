@@ -17,7 +17,7 @@ key: 7942f6cb9a
 
 *** =instructions
 
-New York City has an open access dataset containing all 311 service calls requesting service or registering a complaint. The data has been preloaded in `complaints` dataframe. 
+New York City has an open access dataset containing all 311 service calls requesting service or registering a complaint. The data has been preloaded in `complaints` dataframe. Several complaints have been made 
 
 *** =hint
 
@@ -29,7 +29,7 @@ import pandas as pd
 import scipy.stats as stats
 import urllib.request
 
-filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/Chicago_violent_crimes.csv.gz.csv'
+filename = 'https://s3.amazonaws.com/assets.datacamp.com/production/course_6777/datasets/nyc_complaints_311.csv.gz.csv'
 urllib.request.urlretrieve(filename, "nyc_complaints_311.csv.gz")
 
 complaints = pd.read_csv('nyc_complaints_311.csv.gz')
@@ -50,7 +50,7 @@ complaints = pd.read_csv('nyc_complaints_311.csv.gz')
 
 ```
 
---- type:NormalExercise lang:python xp:100 skills:2 key:3860ec687f
+--- type:NormalExercise lang:python xp:100 skills:2 key:32675be177
 ## CHAPTER 2: Exercise 2
 
 ```yaml
@@ -58,7 +58,7 @@ type: NormalExercise
 lang: python
 xp: 100
 skills: 1
-key: 8bd6c5417f
+key: 7942f6cb9a
 ```
 
 *** =instructions
