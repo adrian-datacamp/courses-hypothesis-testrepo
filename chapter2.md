@@ -50,7 +50,7 @@ complaints = pd.read_csv('nyc_complaints_311.csv.gz')
 
 ```
 
---- type:NormalExercise lang:python xp:100 skills:2 key:abb0044cf9
+--- type:NormalExercise lang:python xp:100 skills:2 key:a387ec52f7
 ## CHAPTER 2: Exercise 2
 
 ```yaml
@@ -58,10 +58,12 @@ type: NormalExercise
 lang: python
 xp: 100
 skills: 1
-key: 35a868fda6
+key: 7942f6cb9a
 ```
 
 *** =instructions
+
+Till now we have used t-statistics for hypothesis testing. However, for large data (n > 30) and with known variance the usage of z-test is appropriate. 
 
 *** =hint
 
