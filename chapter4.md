@@ -119,6 +119,11 @@ crime = df
 
 *** =sample_code
 ```{python}
+# calculate distributions
+distr_theft = 
+distr_mv_theft = 
+distr_burglary = 
+
 # f-statistic
 stats.f_oneway(theft, mv_theft, burglary)
 
