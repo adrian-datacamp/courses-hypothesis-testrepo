@@ -122,7 +122,7 @@ def typeI_typeII_plotter():
     plt.fill_between(x=np.arange(-2,2,0.01), y1= norm.pdf(np.arange(-2,2,0.01),loc=3, scale=2),facecolor='blue', alpha=0.35)
     plt.fill_between(x=np.arange(2,10,0.01), y1= norm.pdf(np.arange(2,10,0.01),loc=3, scale=2), facecolor='white', alpha=0.35)
 
-    plt.text(x=-1, y=0.15, s= "Null Hypothesis", fontsize=6)
+    plt.text(x=-1.8, y=0.15, s= "Null Hypothesis", fontsize=6)
     plt.text(x=2.5, y=0.13, s= "Alternative", fontsize=6)
     plt.text(x=2.1, y=0.01, s= "Type 1 Error", fontsize=6)
     plt.text(x=-3.2, y=0.01, s= "Type 1 Error", fontsize=6)
