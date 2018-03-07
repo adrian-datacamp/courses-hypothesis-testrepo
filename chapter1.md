@@ -62,7 +62,7 @@ skills: 2
 
 `@instructions`
 
-Type I and Type II errors. `typeI_typeII_plotter()` function plots the NULL hypothesis and alternative distributions and highlights the Type I and Type II errors.
+Type I and Type II errors. `typeI_typeII_plotter()` function plots the NULL and alternative distributions, and highlights the Type I and Type II errors.
 
 `@hint`
 
