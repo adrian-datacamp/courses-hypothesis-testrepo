@@ -90,7 +90,7 @@ key: 08a7ea7589
 
 *** =instructions
 
-The City of Chicago has made publicly available their crime records, and we have preloaded the data in `crime` dataframe. There are several violent crimes happening in the city, extracted from `crime` and stored in separate dataframes: `theft`, `assault`, `homicide`, `burglary`, `arson`. 
+The City of Chicago has made publicly available their crime records, and we have preloaded the data in `crime` dataframe. There are several violent crimes happening in the city, extracted from `crime` and stored in separate dataframes: `theft`, `mv_theft`,`burglary`. 
 
 *** =hint
 
@@ -108,10 +108,10 @@ urllib.request.urlretrieve(filename, "Chicago_violent_crimes.csv.gz")
 df = pd.read_csv('Chicago_violent_crimes.csv.gz')
 
 theft = df[df['Primary Type']=='THEFT']
-assault = df[df['Primary Type']=='ASSAULT']
-homicide = df[df['Primary Type']=='HOMICIDE']
+mv_theft = df[df['Primary Type']=='MOTOR VEHICLE THEFT']
+#homicide = df[df['Primary Type']=='HOMICIDE']
 burglary = df[df['Primary Type']=='BURGLARY']
-arson = df[df['Primary Type']=='ARSON']
+#arson = df[df['Primary Type']=='ARSON']
 
 crime = df
 
@@ -119,6 +119,8 @@ crime = df
 
 *** =sample_code
 ```{python}
+# f-statistic
+stats.f_oneway(theft, mv_theft, burglary)
 
 ```
 
