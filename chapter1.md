@@ -22,7 +22,7 @@ key: 7942f6cb9a
 
 * p-value
 * significance level
-* confidence level
+* confidence interval
 
 
 `@pre_exercise_code`
