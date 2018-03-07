@@ -26,7 +26,7 @@ Based on your obtained p-value, the following can be inferred about United Airli
 
 a) UA experiences significantly different delays
 
-b) there is no statistically significant difference between UA delays and all airline company delays
+b) there is no statistically significant difference between UA delays and overall all airline company delays
 
 c) UA experiences on average more delays 
 
