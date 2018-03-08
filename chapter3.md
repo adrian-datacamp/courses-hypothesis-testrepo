@@ -91,7 +91,7 @@ Recall the US flights dataset from Chapter 1. The conclusion was that the p-valu
 
 a) Using again the same data, evaluate whether there are less or more UA delays compared to overall US airline delays. The United Airlines flights have been preloaded in `df_ua` and delays in `ua_delays`. The information on all flights and all delays have been stored in `df_flights` and `all_delays`.
 
-b) Compare the delays of two competing airline companies and decide whether they are experiencing statisticall significant delays. If yes, in what direction. The Delta flights have been preloaded in `df_dl` and delays in `dl_delays`.
+b) Compare the delays of two competing airline companies (Delta and United) and decide whether they are experiencing statisticall significant delays. If yes, in what direction. The Delta flights have been preloaded in `df_dl` and delays in `dl_delays`.
 
 
 *** =hint
