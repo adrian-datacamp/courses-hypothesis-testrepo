@@ -119,11 +119,7 @@ dl_delays = df_dl['DEPARTURE_DELAY'].dropna()
 
 *** =sample_code
 ```{python}
-print('Test print!')   
-```
 
-*** =solution
-```{python}
 print(all_delays.mean())
 print(ua_delays.mean())
 
@@ -134,7 +130,12 @@ stats.ttest_1samp(ua_delays, popmean)
 # test direction of the effect (less or more delays) - one tailed hypothesis test
 
 # two independent samples 
-stats.ttest_ind(ua_delays, dl_delays)
+stats.ttest_ind(ua_delays, dl_delays) 
+
+```
+
+*** =solution
+```{python}
 
 ```
 
