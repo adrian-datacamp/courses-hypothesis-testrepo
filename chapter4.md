@@ -62,9 +62,6 @@ pdf_plotter(mean_3,std_3, 'no treatment')
 plt.legend()
 plt.show()
 
-# f-statistic
-stats.f_oneway(theft, assault, homicide, burglary, arson)
-
 ```
 
 `@solution`
@@ -126,6 +123,8 @@ distr_burglary =
 
 # f-statistic
 stats.f_oneway(theft, mv_theft, burglary)
+
+# evaluate 
 
 ```
 
