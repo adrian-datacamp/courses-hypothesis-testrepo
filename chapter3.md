@@ -87,7 +87,11 @@ key: e94f3cb870
 
 *** =instructions
 
-Recall the US flights dataset from Chapter 1. The conclusion was that the p-value is small enough to reject the null hypothesis stating that there is no statistically significant difference between the mean of United Airlines delays and mean delays experienced overall. Using again the same data, evaluate whether there are less or more UA delays compared to overall US airline delays. The United Airlines flights have been preloaded in `df_ua` and delays in `ua_delays`. The information on all flights and all delays have been stored in `df_flights` and `all_delays`.
+Recall the US flights dataset from Chapter 1. The conclusion was that the p-value is small enough to reject the null hypothesis stating that there is no statistically significant difference between the mean of United Airlines delays and mean delays experienced overall. 
+
+a) Using again the same data, evaluate whether there are less or more UA delays compared to overall US airline delays. The United Airlines flights have been preloaded in `df_ua` and delays in `ua_delays`. The information on all flights and all delays have been stored in `df_flights` and `all_delays`.
+
+b) Compare the delays of two competing airline companies and decide whether they are experiencing statisticall significant delays. If yes, in what direction. The Delta flights have been preloaded in `df_de` and delays in `de_delays`.
 
 
 *** =hint
@@ -108,6 +112,9 @@ all_delays = df_flights['DEPARTURE_DELAY'].dropna()
 df_ua = df_flights.loc[df_flights['AIRLINE'] == 'UA']
 ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
 
+df_de = df_flights.loc[df_flights['AIRLINE'] == 'DE']
+de_delays = df_de['DEPARTURE_DELAY'].dropna()
+
 ```
 
 *** =sample_code
@@ -127,7 +134,7 @@ stats.ttest_1samp(ua_delays, popmean)
 # test direction of the effect (less or more delays) - one tailed hypothesis test
 
 # two independent samples 
-ttest_ind(ua_delays, delta_delays)
+stats.ttest_ind(ua_delays, delta_delays)
 
 ```
 
