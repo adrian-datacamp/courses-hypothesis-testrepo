@@ -112,7 +112,7 @@ all_delays = df_flights['DEPARTURE_DELAY'].dropna()
 df_ua = df_flights.loc[df_flights['AIRLINE'] == 'UA']
 ua_delays = df_ua['DEPARTURE_DELAY'].dropna()
 
-df_de = df_flights.loc[df_flights['AIRLINE'] == 'DL']
+df_dl = df_flights.loc[df_flights['AIRLINE'] == 'DL']
 dl_delays = df_dl['DEPARTURE_DELAY'].dropna()
 
 ```
