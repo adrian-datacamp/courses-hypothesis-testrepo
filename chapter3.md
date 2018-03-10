@@ -129,7 +129,7 @@ stats.ttest_1samp(ua_delays, popmean)
 
 # test direction of the effect (less or more delays) - one tailed hypothesis test
 
-# two independent samples 
+# compare two independent samples 
 st, p = stats.ttest_ind(ua_delays, dl_delays) 
 
 ```
