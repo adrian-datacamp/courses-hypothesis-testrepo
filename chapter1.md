@@ -24,10 +24,6 @@ A newspaper report (ABC News poll, May 16-20, 2001) was concerned whether or not
 
 Therefore, the confidence interval for the (unknown) population proportion p is 69% ± 3%. That is, we can be really confident that between 66% and 72% of all U.S. adults think using a hand-held cell phone while driving a car should be illegal.
 
-* p-value
-* significance level
-* confidence interval
-
 
 `@pre_exercise_code`
 ```{python}
