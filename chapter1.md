@@ -20,6 +20,9 @@ key: 7942f6cb9a
 
 `@instructions`
 
+A newspaper report (ABC News poll, May 16-20, 2001) was concerned whether or not U.S. adults thought using a hand-held cell phone while driving should be illegal. Of the 1,027 U.S. adults randomly selected for participation in the poll, 69% thought that it should be illegal. The reporter claimed that the poll's "margin of error" was 3%. Should using a hand-held cell phone while driving be illegal?
+
+Therefore, the confidence interval for the (unknown) population proportion p is 69% ± 3%. That is, we can be really confident that between 66% and 72% of all U.S. adults think using a hand-held cell phone while driving a car should be illegal.
 
 * p-value
 * significance level
