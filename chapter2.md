@@ -17,7 +17,7 @@ key: 7942f6cb9a
 
 *** =instructions
 
-New York City has an open access dataset containing all 311 service calls requesting service or registering a complaint. The data has been preloaded in `complaints` dataframe. Several complaints have been made 
+New York City has an open access dataset containing all 311 service calls requesting service or registering a complaint. The data has been preloaded in `complaints` dataframe. The Mayor's Office in requesting an assessment on the complaints happening in NYC   
 
 *** =hint
 
