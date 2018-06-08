@@ -197,7 +197,6 @@ z_score = (p - P) / stddev
 
 # since this is a two-tailed test, the p-value is the probability that the z-score is less than or greater than its +/- value
 p_val = stats.norm.cdf(z_score)*2
-
 ```
 
 *** =solution

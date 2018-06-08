@@ -47,6 +47,31 @@ success_msg("Great work!")
 ```
 
 
+
+
+---
+## Testing Proportions
+
+```yaml
+type: PureMultipleChoiceExercise
+key: b9a01998c7
+xp: 50
+skills: 2
+```
+Which question(s) cannot be answered using hypothesis testing for a proportion?
+
+`@possible_answers`
+
+- Do the complaints coming from Manhattan constitute more than 50% of the entire NYC complaints?
+- Are there more than 50 percent of Americans who self-identify as liberal?
+- Is the proportion of babies born male different from 50 percent?
+- [Is the mean number of NYC complaints coming from Manhattan more than 100 per week?]
+
+
+`@hint`
+
+`@feedback`
+
 ---
 ## CHAPTER 1: Exercise 2
 
