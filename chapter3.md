@@ -216,7 +216,7 @@ p_val = stats.norm.cdf(z_score)*2
 --- type:MultipleChoiceExercise lang:python xp:50 skills:2 key:a939fe46dc
 ## CHAPTER 3: Exercise 4
 
-Suppose the previous exercise is stated a bit differently. Suppose the CEO claims that at least 80 percent of the company's 1,000,000 customers are very satisfied. What needs to be changed in our hypothesis test to test this claim, given that all the other information remain unchanged (significance level, sample size, etc.)?
+Suppose the previous exercise is stated a bit differently. Suppose the CEO claims that at least 80% of the company's 1,000,000 customers are very satisfied. What needs to be changed in our hypothesis test to test this claim, given that all the other information remain unchanged (significance level, sample size, etc.)?
 
 *** =instructions
 
@@ -226,6 +226,8 @@ Suppose the previous exercise is stated a bit differently. Suppose the CEO claim
 - Nothing, the result is the same.
 
 *** =hint
+
+The change in the exercise statement is in the "at least 80%". What test do we use to test that something is of a certain value or higher than that? 
 
 *** =pre_exercise_code
 ```{python}
