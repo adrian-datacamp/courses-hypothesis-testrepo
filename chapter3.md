@@ -56,6 +56,12 @@ plt.show()
 # test whether there is a difference between 2016 and 2017
 st, p = stats.ttest_ind(pop_2016, pop_2017)
 
+if (p > alpha):
+    print('p-value > alpha, thus there is a statistically significant difference.')
+else: 
+    print('p-value <= alpha, thus there is no statistically significant difference.')
+
+
 # test if there is an increase in 2017 (directional)
 ```
 
