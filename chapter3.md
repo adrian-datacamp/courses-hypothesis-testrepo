@@ -220,7 +220,7 @@ Suppose the previous exercise is stated a bit differently. Suppose the CEO claim
 
 *** =instructions
 
-- We use t-test for this question.
+- We use the t-test for this question.
 - We use again the z-test to perform a two-tailed test.
 - We use again the z-test to perform a one-tailed test.
 - Nothing, the result is the same.
