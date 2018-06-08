@@ -149,3 +149,63 @@ st, p = stats.ttest_ind(ua_delays, dl_delays)
 ```{python}
 
 ```
+
+
+---
+## CHAPTER 3: Exercise 3
+
+```yaml
+type: NormalExercise
+lang: python
+xp: 100
+skills: 1
+key: 50d0e9a131
+```
+
+*** =instructions
+
+The CEO of a company claims that 80 percent of his 1,000,000 customers are very satisfied with the service they receive. To test this claim, the Analytics team surveyed 100 customers, using simple random sampling. Among the sampled customers, 73 percent say they are very satisified. Based on these findings, can we reject the CEO's hypothesis that 80% of the customers are very satisfied? Use a 0.05 level of significance.
+
+*** =hint
+
+*** =pre_exercise_code
+```{python}
+import numpy as np
+import scipy.stats as stats
+import math
+
+# sample proportion
+p = 0.73
+
+# hypothesized proportion
+P = 0.8
+
+# sample size
+n = 100
+
+# population size
+N = 1000000
+```
+
+*** =sample_code
+```{python}
+# calculate standard deviation
+stddev = math.sqrt(P*(1-P)/n)
+
+# calculate z-score as z = (p - P) / stddev
+z_score = (p - P) / stddev
+
+# since this is a two-tailed test, the p-value is the probability that the z-score is less than or greater than its +/- value
+p_val = stats.norm.cdf(z_score)*2
+
+```
+
+*** =solution
+```{python}
+
+```
+
+*** =sct
+```{python}
+
+```
