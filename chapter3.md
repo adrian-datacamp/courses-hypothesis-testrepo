@@ -151,8 +151,13 @@ st, p = stats.ttest_ind(ua_delays, dl_delays)
 ```
 
 
+
+
+
 ---
 ## CHAPTER 3: Exercise 3
+
+The CEO of a company claims that 80 percent of his 1,000,000 customers are very satisfied with the service they receive. To test this claim, the Analytics team surveyed 100 customers, using simple random sampling. Among the sampled customers, 73 percent say they are very satisified. Based on these findings, can we reject the CEO's hypothesis that 80% of the customers are very satisfied? Use a 0.05 level of significance.
 
 ```yaml
 type: NormalExercise
@@ -163,8 +168,6 @@ key: 50d0e9a131
 ```
 
 *** =instructions
-
-The CEO of a company claims that 80 percent of his 1,000,000 customers are very satisfied with the service they receive. To test this claim, the Analytics team surveyed 100 customers, using simple random sampling. Among the sampled customers, 73 percent say they are very satisified. Based on these findings, can we reject the CEO's hypothesis that 80% of the customers are very satisfied? Use a 0.05 level of significance.
 
 *** =hint
 
@@ -207,4 +210,29 @@ p_val = stats.norm.cdf(z_score)*2
 *** =sct
 ```{python}
 
+```
+
+
+--- type:MultipleChoiceExercise lang:python xp:50 skills:2 key:a939fe46dc
+## CHAPTER 3: Exercise 4
+
+Suppose the previous exercise is stated a bit differently. Suppose the CEO claims that at least 80 percent of the company's 1,000,000 customers are very satisfied. What needs to be changed in our hypothesis test to test this claim, given that all the other information remain unchanged (significance level, sample size, etc.)?
+
+*** =instructions
+
+- We use t-test for this question.
+- We use again the z-test to perform a two-tailed test.
+- We use again the z-test to perform a one-tailed test.
+- Nothing, the result is the same.
+
+*** =hint
+
+*** =pre_exercise_code
+```{python}
+
+```
+
+*** =sct
+```{python}
+test_mc(3)
 ```
